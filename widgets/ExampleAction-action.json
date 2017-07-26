@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "spec-version": "1.4"
+  },
+  "configuration-groups": [
+    {
+      "label": "Configuration Options",
+      "properties": [
+        {
+          "widget-type": "textbox",
+          "label": "An Example Option",
+          "name": "exampleConfigOption",
+          "widget-attributes": {
+            "placeholder": "This value is specified in the <project-root>/widgets/ExampleAction-action.json"
+          }
+        }
+      ]
+    }
+  ],
+  "outputs": []
+}
