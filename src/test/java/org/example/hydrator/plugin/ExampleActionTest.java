@@ -14,7 +14,7 @@
  * the License.
  */
 
-package co.cask.hydrator.plugin;
+package org.example.hydrator.plugin;
 
 import co.cask.cdap.etl.mock.action.MockActionContext;
 import co.cask.cdap.etl.mock.common.MockPipelineConfigurer;

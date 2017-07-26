@@ -3,7 +3,7 @@
 Description
 -----------
 The information you add here will be displayed to the user when they click on the "Reference" tab in the UI.
-This information is coming from the <project-root>/docs/ExampleAction-action.md file.
+This information is coming from the &lt;project-root&gt;/docs/ExampleAction-action.md file.
 
 Use Case
 --------

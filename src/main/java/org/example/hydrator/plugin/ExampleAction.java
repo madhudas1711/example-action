@@ -14,7 +14,8 @@
  * the License.
  */
 
-package co.cask.hydrator.plugin;
+// If you change this, make sure to update the exported-packages variable in the pom.xml file
+package org.example.hydrator.plugin;
 
 import co.cask.cdap.api.annotation.Description;
 import co.cask.cdap.api.annotation.Macro;
