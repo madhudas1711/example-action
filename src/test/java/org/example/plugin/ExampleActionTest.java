@@ -14,10 +14,10 @@
  * the License.
  */
 
-package org.example.hydrator.plugin;
+package org.example.plugin;
 
-import co.cask.cdap.etl.mock.action.MockActionContext;
-import co.cask.cdap.etl.mock.common.MockPipelineConfigurer;
+import io.cdap.cdap.etl.mock.action.MockActionContext;
+import io.cdap.cdap.etl.mock.common.MockPipelineConfigurer;
 import org.junit.Test;
 
 /**
