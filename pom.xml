@@ -67,15 +67,16 @@
     <hadoop.version>2.6.0</hadoop.version>
     <etl.versionRange>[6.0.0,10.0.0-SNAPSHOT)</etl.versionRange>
     <!-- You will need to update this to include all packages required by your plugin so that CDAP can find them -->
-    <exported-packages>org.example.hydrator.plugin.*</exported-packages>
+    <exported-packages>org.example.plugin.*</exported-packages>
     <!-- properties for script build step that creates the config files for the artifacts -->
     <widgets.dir>widgets</widgets.dir>
     <docs.dir>docs</docs.dir>
-    <!--<app.parents>
-      system:cdap-data-pipeline[6.0.0-SNAPSHOT,7.0.0-SNAPSHOT),system:cdap-data-streams[6.0.0-SNAPSHOT,7.0.0-SNAPSHOT)
-    </app.parents>-->
+    <app.parents>
+      system:cdap-data-pipeline[6.0.0,10.0.0-SNAPSHOT),system:cdap-data-streams[6.0.0,10.0.0-SNAPSHOT)
+    </app.parents>
     <!-- this is here because project.basedir evaluates to null in the script build step -->
     <main.basedir>${project.basedir}</main.basedir>
+    
   </properties>
 
   <repositories>
@@ -211,6 +212,7 @@
                 <exclude>**/*.json</exclude>
                 <exclude>**/*.json.template</exclude>
                 <exclude>**/MANIFEST.MF</exclude>
+                <exclude>**/RemoteSystemsTempFiles/.project</exclude>
                 <!-- exclude any hack classes -->
                 <exclude>**/org/apache/hadoop/**</exclude>
                 <!-- exclude resource files-->
